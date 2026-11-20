@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Gallery</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body>
+
+    <h1>College Photo Gallery</h1>
+
+    <div class="gallery-container">
+
+        {% for i in pho %}
+
+        <div class="gallery-card">
+
+            <img src="{{ item.photo.url }}" alt="College Event">
+
+            <h3>{{ i.event_name }}</h3>
+
+            <p>{{ i.description }}</p>
+
+            <p>{{ i.event_date }}</p>
+
+        </div>
+
+        {% endfor %}
+
+    </div>
+
+</body>
+</html>

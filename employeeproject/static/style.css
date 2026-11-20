@@ -1,0 +1,60 @@
+
+
+body {
+   
+    font-family: Arial, sans-serif;
+    background-color: #f7f1f1;
+}
+
+
+h1 {
+    text-align: center;
+    color: red;
+    margin: 30px ;
+}
+
+/* Employee Cards Container */
+.employee-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+    padding: 20px;
+    /* background:none; */
+    width: 100%; 
+    /* box-sizing: border-box; */
+}
+
+/* Individual Employee Card */
+.employee-card {
+    background-color: #f3d1d1;
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px;
+    box-sizing: border-box;
+   
+}
+
+/* Card Hover Effect */
+.employee-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Employee Image */
+.employee-card img {
+    width: 100px;
+    height: 150px;
+    /* object-fit: cover; */
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Employee Details */
+.employee-card p {
+    margin: 10px 0;
+    color: #333333;
+    font-size: 16px;
+    /* line-height: 1.5; */
+}
+
+

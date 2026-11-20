@@ -1,0 +1,10 @@
+from django.shortcuts import render
+
+from myapp.models import Employee
+
+# Create your views here.
+def employee_data(request):
+    
+    e = Employee.objects.all()
+    ctx = {'emp': e}
+    return render(request, 'index.html', ctx)
