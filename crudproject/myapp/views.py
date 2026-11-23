@@ -64,3 +64,4 @@ def deleteproduct(request, id):
     photos=Product.objects.get(id=id)
     photos.delete()
     return redirect('display')
+
