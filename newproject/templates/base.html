@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}
+    <title>base page</title>
+    {% endblock %}
+
+
+
+</head>
+<body>
+    <nav>
+        <a href="{% url 'basehome' %}" >Home</a>
+        <a href="{% url 'about Us' %}">About Us</a>
+        <a href="{% url 'service' %}">Services</a>
+        <a href="{% url 'contact' %}">Contact Us</a>
+    </nav>
+    {% block content %}
+    <h1>Welcome to Dashboard........</h1>
+    {% endblock %}
+</body>
+</html>

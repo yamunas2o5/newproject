@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+</head>
+<body>
+    <table border="2px">
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Image</th>
+        </tr>
+        {% for i in pho %}
+        <tr>
+            <td>{{i.name}}</td>
+            <td>{{i.price}}</td>
+            <td>{{i.quantity}}</td>
+            <td><img src={{i.img.url}}></td>
+            <td><a href="#">Update</a></td>
+            <td><a href="#">Delete</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="{% url 'insert' %}">Do you want to insert a new record?????</a>
+</body>
+</html>
